@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+@media only screen and (max-width: 767px) {
+    .links {
+        gap: 0 !important;
+    }
+
+    .main-carousel {
+    height: 250px !important;
+}
+
+    .owl-item > .item > img {
+    max-height: 250px !important;
+    max-width: 250px !important;
+    }
+
+    .thumb-carousel>.owl-stage-outer>.owl-stage>.owl-item {
+    width: 50px !important;
+    }
+
+    .thumb-carousel img {
+    width: 50px !important;
+    margin: 5px !important ;
+    }
+
+    
+}
+
+.thumb-carousel {
+    margin-top: 10px;
+    display: flex !important;
+    justify-content: center ;
+}
+
+.thumb-carousel img {
+    border: 1px solid black;
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+.main-carousel {
+    aspect-ratio: 1;
+    height: 600px;
+}
+
+.owl-item > .item > img {
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.thumb-carousel>.owl-stage-outer>.owl-stage {
+    width: fit-content !important;
+}
+
+.thumb-carousel>.owl-stage-outer>.owl-stage>.owl-item {
+    width: 60px !important;
+}
+
+.productImg {
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    justify-items: center;
+}
