@@ -218,8 +218,13 @@ footer {
 }
 
 .searchBar {
-    margin: 0 100px;
+    padding-left: 100px;
     height: 30px;
+    margin-bottom: 0px !important;
+}
+
+.searchBar form {
+    margin-bottom: 50px;
 }
 
 input[type="text"] {
@@ -240,13 +245,13 @@ input[type="text"] {
 }
 
 input[type="text"]:hover:focus {
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid black;
 }
 
 input[type="text"]:focus {
-    width: 150px;
+    width: 200px;
     z-index: 1;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid black;
     cursor: text;
 }
 
@@ -262,6 +267,27 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     opacity: 0.6;
+}
+
+#results {
+    display: block;
+    width: 200px;
+    list-style-type: none;
+    padding-left: 0px !important;
+}
+
+#results .productsearch {
+    padding: 10px 0;
+    border: 0.5px black solid;
+    width: 200px;
+    display: none;
+    background-color: ghostwhite;
+}
+
+#results .productsearch a {
+    text-decoration: none !important;
+    font-size: medium;
+    color: black;
 }
 
 .ham {

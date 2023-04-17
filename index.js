@@ -116,3 +116,39 @@ function container() {
         text.innerHTML = "Menu"
     }
 }
+
+const searchInput = document.getElementById("search");
+
+const namesFromDOM = document.getElementsByClassName("productsearch");
+
+searchInput.addEventListener("keyup", (event) => {
+    const { value } = event.target;
+
+    const searchQuery = value.toLowerCase();
+
+    for (const productElement of namesFromDOM) {
+        let product = productElement.textContent.toLowerCase();
+
+        if (searchQuery === "") {
+            productElement.style.display = "none";
+        }
+
+        else if (product.includes(searchQuery)) {
+            productElement.style.display = "block";
+        }
+
+        else {
+            productElement.style.display = "none";
+        }
+    }
+
+});
+
+searchInput.addEventListener("blur", () => {
+    // Hide only the products that are currently visible
+    for (const productElement of namesFromDOM) {
+        if (productElement.style.display === "block") {
+            productElement.style.display = "none";
+        }
+    }
+});
